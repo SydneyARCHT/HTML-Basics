@@ -11,18 +11,86 @@
     </h1>
     <br>  <!--Small break to seperate the header and the next smaller text-->
 </header>
+<style>
+    h1 {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+    
+    h3 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 17px;
+    }
+
+    ul{
+        margin-bottom: 50px;
+        padding-left: 60px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: oblique;
+    }
+    
+    
+    ol {
+        margin-bottom: 100px;
+        padding-left: 60px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-style: oblique;
+    }
+
+    header {
+        background-color: blanchedalmond;
+    }
+    footer {
+        background-color: #95ecb6;
+    }
+
+    .box {
+        margin: 5px;
+        border: 3px solid #000; 
+        padding: 5px;
+        background-color: rgb(218, 218, 218);
+    }
+
+    #ing-list {
+        text-align: left;
+        color: rgb(117, 117, 117);
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: rgb(255, 196, 0)
+    }
+    
+    button[type="new-page"]{
+      background-color: #007bff;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    button[type="new-page"]:hover {
+      background-color: #0056b3;
+    }
+
+</style>
 <body>
     <h2>
         The Easiest, Tastiest, Most Perfect Chocolate Chip Cookie 
     </h2>
-    <img width="350" height="300" src="https://cookiesfordays.com/wp-content/uploads/2023/10/ghirardelli-chocolate-chip-cookies-ft.jpg"> <!--Image sourced from Google, with the width and height defined to not take up so much space-->
+    <img width="350" height="auto" src="https://cookiesfordays.com/wp-content/uploads/2023/10/ghirardelli-chocolate-chip-cookies-ft.jpg"> <!--Image sourced from Google, with the width and height defined to not take up so much space-->
     <br> <!--another small break-->
     <p>
         This is the <strong>best</strong> <a href="https://www.ghirardelli.com/recipes/classic-chocolate-chip-cookies-rec1016">chocolate chip cookies recipe</a> ever! Just a simple, straightforward, amazingly delicious, <!--Added a hyperlink to the original recipe as well as hightlighting "BEST"-->
         doughy yet still fully cooked, chocolate chip cookie that turns out perfectly every single time! 
     </p>
 
-    <h3>Ingredient List:</h3> <!-- Ingredient List that is unordered using ul-->
+    <div class="box">
+    <section>
+    <h3 id="ing-list">Ingredient List:</h3> <!-- Ingredient List that is unordered using ul-->
         <ul>
         <li>1 cup (2 sticks) unsalted butter, softened</li>
         <li>3/4 cup granulated sugar</li>
@@ -49,6 +117,16 @@
     </ol> 
     
     <p>Don't forget to enjoy your Class Chocolate Chip Cookies with a tall glass of milk &ndash; the perfect combination!</p>
+    </section>
+    </div>
+
+    <section>
+        <p>Got another recipe? Be sure to admit it here!</p>
+        <a href="http://127.0.0.1:5500/week1/day1/homework/recipe_subm_form.html"><button type="new-page">Submit a Recipe</button></a>
+    </section>
+    <footer>
+        <p>&copy; 2024 Bunny. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
 

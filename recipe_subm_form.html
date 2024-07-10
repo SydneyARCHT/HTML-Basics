@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit a Recipe</title>
+<style>
+
+    /* Form elements styling */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+      margin: 20px;
+    }
+
+    form {
+      margin-bottom: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    /* Inputs and textarea */
+    input[type="text"],
+    input[type="password"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd; 
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    button[type="submit"],
+    button[type="reset"]{
+      background-color: #007bff;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    button[type="submit"]:hover,
+    button[type="reset"]:hover {
+      background-color: #0056b3;
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+  <h1>Got a Recipe?</h1>
+
+  <h2>Share it with us!</h2>
+
+  </form action="/submit" method="post">
+
+    <!-- Username -->
+     <label for="username">Username:</label>
+     <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+    <!-- Password -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+    <!-- Subscribe -->
+    <label for="subscribe">Subscribe to our newsletter:</label>
+    <input type="checkbox" id="subscribe" name="subscribe" value="yes" checked>
+
+    <!--Ingredients  -->
+    <label for="ingredients">Ingredients:</label>
+    <textarea id="ingredients" name="ingredients" rows="4" cols="50" placeholder="Enter your Ingredients"></textarea>
+
+    <!-- Instructions -->
+    <label for="instructions">Instructions:</label>
+    <textarea id="instructions" name="instructions" rows="4" cols="50" placeholder="Enter your Instructions"></textarea>
+
+    <!-- Comments -->
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments"></textarea>
+
+    <!-- Reset -->
+    <button type="reset">Reset</button>
+
+    <!-- Submit -->
+    <button type="submit">Submit</button>
+    
+   </form>
+  
+</body>
+</html>
